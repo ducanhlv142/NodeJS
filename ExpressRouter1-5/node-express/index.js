@@ -7,6 +7,8 @@ const app = express();
 const hostname = 'localhost';
 const port = 3004;
 const dishRouter = require('./routes/dishRouter');
+const promotionRouter = require('./routes/promotionRouter');
+const leaderRouter = require('./routes/leaderRouter');
 
 
 
@@ -21,6 +23,8 @@ const dishRouter = require('./routes/dishRouter');
 // app.use(express.static(__dirname + '/public'));
 // app.use(bodyParser.json());
 app.use('/dishes', dishRouter);
+// app.use('/promotions', promotionRouter);
+// app.use('/leaders', leaderRouter);
 
 // app.all('/dishes', (req, res, next) => {
 //   res.statusCode = 200;
